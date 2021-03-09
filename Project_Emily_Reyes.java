@@ -1,15 +1,16 @@
+//Computer Hardware Graphics Quality Recommendation Tool
 import java.util.Scanner;
 
 public class Project_Emily_Reyes
 {
    public static void main(String[] args)
    {
-      double graphic = 0.0;               //GPU amount
-      double processor = 0.0;             //CPU amount
-      double cores = 0.0;                 //Cores amount
-      int choice = 0;                     //To hold choice
+      double graphic = 0.0;               //The GPU clock speed
+      double processor = 0.0;             //The CPU clock speed
+      double cores = 0.0;                 //The number of Cores 
+      int choice = 0;                     //The Monitor resolution 
       double multiplier = 0.0;            //for mutiplier 
-      double preformanceScore = 0.0;      //for total preformance score
+      double preformanceScore = 0.0;      //The preformance score
       
      //choices
       final int option1 = 1;
@@ -63,7 +64,7 @@ public class Project_Emily_Reyes
       
       //Toal preformance Score from all the data gathered 
       preformanceScore = ((5 * graphic) + (cores * processor)) * multiplier;
-      System.out.printf("The total Preformance score is %.2f", preformanceScore);
+      System.out.printf("The total Preformance score is %.3f", preformanceScore);
 
 
            
