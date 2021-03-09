@@ -1,4 +1,3 @@
-//Computer Hardware Graphics Quality Recommendation Tool
 import java.util.Scanner;
 
 public class Project_Emily_Reyes
@@ -23,8 +22,6 @@ public class Project_Emily_Reyes
        double option2multi = .75;
        double option3multi = .55;
        double option4multi = .35;
-      
-      
       
       Scanner keyboard = new Scanner (System.in);
       //asking the audience to enter the GPU speed 
@@ -66,8 +63,28 @@ public class Project_Emily_Reyes
       preformanceScore = ((5 * graphic) + (cores * processor)) * multiplier;
       System.out.printf("The total Preformance score is %.3f", preformanceScore);
 
-
-           
+      //Computer Hardware Graphics Quality Recommendation Tool
+      
+      if(preformanceScore > 17000)
+      {
+        System.out.println("\nRecommendation Graphic Quality: ultra");
+      }   
+      else if(preformanceScore >= 17000)
+      {
+        System.out.println("\nRecommendation Graphic Quality: High");
+      }  
+      else if(preformanceScore >= 15000)
+      {
+        System.out.println("\nRecommendation Graphic Quality: Medium");
+      }
+      else if(preformanceScore >= 13000)
+      { 
+         System.out.println("\nRecommendation Graphic Quality: Low");
+      }
+      else
+      {  
+        System.out.println("\nRecommendation Graphic Quality: Unable to play");
+      }           
       
    }//end main
 }//end class      
