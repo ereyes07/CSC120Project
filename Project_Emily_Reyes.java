@@ -4,6 +4,7 @@ public class Project_Emily_Reyes
 {
    public static void main(String[] args)
    {
+<<<<<<< Updated upstream
       double graphic = 0.0;               //The GPU clock speed
       double processor = 0.0;             //The CPU clock speed
       double cores = 0.0;                 //The number of Cores 
@@ -69,10 +70,28 @@ public class Project_Emily_Reyes
       }
       
       //choices of resolution
+=======
+      double graphic = 0.0;
+      double processor = 0.0;
+      double cores = 0.0;
+      int choice = 0;
+      
+      Scanner keyboard = new Scanner (System.in);
+      
+      System.out.println("Please enter the clock speed (in megahertz) of your processor(CPU).");
+      graphic = keyboard.nextDouble();
+      
+      System.out.println("Please enter the number of cores that your processor (CPU) has. ");
+      processor = keyboard.nextDouble();
+      
+      System.out.println("Please select the resolution of your monitor");
+      
+>>>>>>> Stashed changes
       System.out.println("1. 1280 x 720");
       System.out.println("2. 1920 x 1080");
       System.out.println("3. 2560 x 1440");
       System.out.println("4. 3840 x 2160");
+<<<<<<< Updated upstream
       //asking the audience to pick a choice
       System.out.println("\nPlease select the resolution of your monitor: ");
       choice = keyboard.nextInt();
@@ -138,3 +157,17 @@ public class Project_Emily_Reyes
      
    }//end main
 }//end class      
+=======
+      choice = keyboard.nextInt();
+      
+      
+
+      
+      
+      
+    
+   
+   
+   }
+}      
+>>>>>>> Stashed changes
